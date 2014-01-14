@@ -4,6 +4,7 @@
 # |      /     |   __|  |  |\/|  |   /  /_\  \   |  | |  . `  |    |  |      /  /_\  \   |  |     |  |\/|  |
 # |  |\  \----.|  |____ |  |  |  |  /  _____  \  |  | |  |\   |    |  `----./  _____  \  |  `----.|  |  |  |  __
 # | _| `._____||_______||__|  |__| /__/     \__\ |__| |__| \__|     \______/__/     \__\ |_______||__|  |__| (__)
+
 require_relative '../quiz'
 
 # The first question's tests are written.
@@ -33,11 +34,31 @@ end
   # del_del("abdelcd") => "abcd"
   # del_del("xyz") => "xyz"
 
+  describe '#del_del' do
+    it "deletes del from a word" do
+      word_1 = del_del("abdelcd")
+      expect(word_1).to eq "abcd"
+
+      word_2 = del_del("xyz")
+      expect(word_2).to eq "xyz"
+    end
+
+  end
+
 # Question 3: a method called missing_char
   # Example Usage:
   # missing_char("kitten", 1) => "ktten"
   # missing_char(347, 1) => RuntimeError: Please enter a string!
   # https://www.relishapp.com/rspec/rspec-expectations/v/2-14/docs/built-in-matchers/raise-error-matcher
+
+  describe '#missing_char' do
+    it "deletes a character from a string" do
+      word_3 = "helloworld"
+      expect(missing_char(word_3, 3)).to eq "heoworld" # doesn't work yet
+
+    end
+
+  end
 
 # Question 4: a method called near_hundred
   # Example Usage:

@@ -15,11 +15,13 @@ def sleep_in?(options={})
 
 	if options[:vacation] == true
 		return true
-	elsif Time.new.wday >= 6
+	elsif Time.new.wday >= 6 # solution: [0,6].include?(Time.new.wday)
 		return true
 	else
 		return false
 	end
+
+	# solution: options[:vacation] == true || [0,6].include?(Time.new.wday)
 
 end
 
@@ -46,8 +48,16 @@ end
 
 def missing_char(string, index)
 
-	deleted_char = string.slice!(index.to_i)
+	deleted_char = string[index.to_i]
 	string.delete(deleted_char)
+
+	# solution - replace the character at the index with a blank string
+	string[index] = ''
+	string
+
+	# solution - delete the character directly
+	string.slice!(index)
+	string
 
 end
 
@@ -65,3 +75,10 @@ end
 # Given a string, move the last character to the beginning.
 # "cat".back_around => "tca"
 # "hello".back_around => "ohell"
+
+#solution
+class String # because the examples need a class
+	def back_around
+		self[-1] + self[0..-2]
+	end
+end

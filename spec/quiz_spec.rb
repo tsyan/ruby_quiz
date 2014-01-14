@@ -54,7 +54,7 @@ end
   describe '#missing_char' do
     it "deletes a character from a string" do
       word_3 = "helloworld"
-      expect(missing_char(word_3, 3)).to eq "heoworld" # doesn't work yet
+      expect(missing_char(word_3, 3)).to eq "heloworld" # doesn't work yet
 
     end
 

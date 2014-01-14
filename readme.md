@@ -7,7 +7,7 @@ COOL!
 
 Write the corresponding code.
 
-Run `$ rspec spec/` to see if your tests pass.
+Run `rspec` to see if your tests pass.
 
 For the remaining questions write __both__ the tests and functions.
 OH NO!

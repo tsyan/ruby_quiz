@@ -8,8 +8,7 @@ require_relative '../quiz'
 
 # The first question's tests are written.
 # run rspec quiz_spec.rb
-describe "question 1: a function called sleep_in?" do
-
+describe "#sleep_in?" do
   it "returns true if the current day is Saturday or Sunday" do
     # assuming you're answering this on a weekday!
     expect(sleep_in?).to be(false)
@@ -29,18 +28,18 @@ end
 # Write the next tests yourself!
 # See quiz.rb for more details
 
-# Question 2: a function called del_del
+# Question 2: a method called del_del
   # Example Usage:
   # del_del("abdelcd") => "abcd"
   # del_del("xyz") => "xyz"
 
-# Question 3: a function called missing_char
+# Question 3: a method called missing_char
   # Example Usage:
   # missing_char("kitten", 1) => "ktten"
   # missing_char(347, 1) => RuntimeError: Please enter a string!
   # https://www.relishapp.com/rspec/rspec-expectations/v/2-14/docs/built-in-matchers/raise-error-matcher
 
-# Question 4: a function called near_hundred
+# Question 4: a method called near_hundred
   # Example Usage:
   # near_hundred(93) => true
   # near_hundred(52) => false

@@ -27,14 +27,14 @@ end
 # missing_char("kitten", 1) => "ktten"
 # missing_char(347, 1) => RuntimeError: Please enter a string!
 
-# Question 4: a method called near_hundred
+# Question 4: a method called near_hundred?
 #############
-# Write a method called near_hundred
+# Write a method called near_hundred?
 # If the number is between 90 and 99, the result is true;
 # If it is 89 or below, it is false.
-# 93.near_hundred? => true
-# near_hundred(52) => false
-# near_hundred('two') => RuntimeError: Please enter a number!
+# near_hundred? => true
+# near_hundred?(52) => false
+# near_hundred?('two') => RuntimeError: Please enter a number!
 
 # Question 5: a method called back_around
 #############
